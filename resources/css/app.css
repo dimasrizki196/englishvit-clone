@@ -12,6 +12,10 @@
         "Noto Color Emoji";
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Timeline Total: 16 Detik */
 .animate-promo-spin-sequence {
     animation: promo-spin-sequence 16s ease-in-out infinite;

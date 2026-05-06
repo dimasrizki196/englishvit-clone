@@ -40,17 +40,17 @@
             <!-- Tombol Aksi -->
             <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3 sm:gap-4 pt-2">
                 <!-- Daftar Sekarang -->
-                <a href="#"
+                <a href="#daftar"
                     class="w-[80%] sm:w-auto bg-[#FFB800] text-[#003B7E] font-bold py-2 px-6 sm:py-3.5 sm:px-8 rounded-lg text-xs sm:text-base flex items-center justify-center gap-2 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl active:scale-95">
                     <i class="fas fa-thumbs-up text-[10px] sm:text-base"></i>
                     Daftar Sekarang
                 </a>
 
                 <!-- Chat Admin Sekarang -->
-                <a href="#"
+                <a href="https://wa.me/yournumber"
                     class="w-[80%] sm:w-auto border-2 border-white text-white font-bold py-2 px-6 sm:py-3.5 sm:px-8 rounded-lg text-xs sm:text-base flex items-center justify-center gap-2 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl active:scale-95">
                     <i class="fab fa-whatsapp text-sm sm:text-lg"></i>
-                    Chat Admin
+                    Chat Admin Sekarang
                 </a>
             </div>
         </div>

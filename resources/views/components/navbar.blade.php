@@ -54,7 +54,7 @@
 
             <!-- Kanan (Desktop): Menu Navigasi -->
             <div class="hidden md:flex space-x-6 lg:space-x-8 items-center">
-                <a href="#" class="text-white hover:text-gray-200 font-normal text-sm lg:text-base">Beranda</a>
+                <a href="/" class="text-white hover:text-gray-200 font-normal text-sm lg:text-base">Beranda</a>
 
                 <!-- Dropdown Daftar Kursus -->
                 <div class="relative group py-6">
@@ -72,7 +72,7 @@
                     <div
                         class="absolute left-0 mt-4 w-52 bg-white rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100">
                         <div class="py-2">
-                            <a href="#"
+                            <a href="{{ route('live-class') }}"
                                 class="block px-5 py-2.5 text-gray-800 hover:bg-gray-50 hover:text-[#0D71F1] text-base font-medium transition-colors">Live
                                 Class</a>
                             <a href="#"
@@ -94,7 +94,7 @@
                 </div>
 
                 <a href="#" class="text-white hover:text-gray-200 font-normal text-sm lg:text-base">Blog</a>
-                <a href="#" class="text-white hover:text-gray-200 font-normal text-sm lg:text-base">Promo</a>
+                <a href="{{ route('promo.index') }}" class="text-white hover:text-gray-200 font-normal text-sm lg:text-base">Promo</a>
                 <a href="#" class="text-white hover:text-gray-200 font-normal text-sm lg:text-base">Karir</a>
 
                 <a href="#"
@@ -248,7 +248,7 @@
         </a>
 
         <!-- Menu Promo -->
-        <a href="#" class="flex flex-col items-center justify-center w-full text-gray-500 hover:text-[#0D71F1]">
+        <a href="{{ route('promo.index') }}" class="flex flex-col items-center justify-center w-full text-gray-500 hover:text-[#0D71F1]">
 
             <div class="relative w-8 h-8 flex items-center justify-center animate-promo-bounce-sequence">
                 <svg class="absolute inset-0 w-[34px] h-[34px] text-[#F33959] animate-promo-spin-sequence overflow-visible m-auto"
