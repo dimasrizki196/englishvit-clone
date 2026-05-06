@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
@@ -6,6 +6,51 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans:
+        "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
+/* Timeline Total: 16 Detik */
+.animate-promo-spin-sequence {
+    animation: promo-spin-sequence 16s ease-in-out infinite;
+}
+
+.animate-promo-bounce-sequence {
+    animation: promo-bounce-sequence 16s ease-in-out infinite;
+}
+
+@keyframes promo-spin-sequence {
+    0%    { transform: rotate(0deg); }
+    30%   { transform: rotate(90deg); } 
+    40%   { transform: rotate(0deg); }   
+    100%  { transform: rotate(0deg); } 
+}
+
+@keyframes promo-bounce-sequence {
+    0%, 40% { transform: scale(1); }
+    
+    41.5%   { transform: scale(1.35); }
+    43%     { transform: scale(0.8); }
+    44.5%   { transform: scale(1); }    
+    
+    46%     { transform: scale(1.35); }
+    47.5%   { transform: scale(0.8); }
+    49%     { transform: scale(1); }
+    
+    50.5%   { transform: scale(1.35); }
+    52%     { transform: scale(0.8); }
+    53.5%   { transform: scale(1); }
+    
+    53.5%, 100% { transform: scale(1); } 
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
 }
