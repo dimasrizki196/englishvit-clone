@@ -55,7 +55,7 @@
             </div>
         </div>
 
-        <!-- Sisi Kanan: Gambar top.webp (Mentok Bawah) -->
+        <!-- Sisi Kanan  -->
         <div class="w-full md:w-2/5 flex justify-center md:justify-end items-end self-end mt-6 md:mt-0">
             <div class="relative">
                 <!-- Ornamen Lingkaran Kuning -->

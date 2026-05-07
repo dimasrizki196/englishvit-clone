@@ -705,37 +705,25 @@
             </div>
         </section>
 
-        <section class="py-16 md:py-24 bg-white">
+        <section class="py-10 md:py-16 bg-white">
             <div class="max-w-5xl mx-auto px-6">
 
-                <div class="text-center mb-10">
-                    <h2 class="text-3xl md:text-[36px] font-extrabold text-[#212529] mb-4 leading-tight">
+                <div class="text-center mb-8">
+                    <h2 class="text-xl md:text-2xl font-extrabold text-[#212529] mb-3 leading-tight">
                         Rahasia Lancar Speaking dalam<br class="hidden md:block"> Waktu Singkat
                     </h2>
-                    <p class="text-[14px] md:text-[15px] text-gray-600">
+                    <p class="text-[13px] md:text-[14px] text-gray-500">
                         Lihat cara Englishvit bikin siswa yang minder jadi PD speaking English!
                     </p>
                 </div>
 
-                <div class="relative w-full max-w-xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl cursor-pointer group"
-                    onclick="openVideoModal('EEaOgCgxB8I')">
-
-                    <img src="https://img.youtube.com/vi/EEaOgCgxB8I/maxresdefault.jpg" alt="Rahasia Lancar Speaking"
-                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-
-                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors"></div>
-
-                    <div
-                        class="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-[#212529]/80 to-transparent pointer-events-none">
-                    </div>
-
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <div
-                            class="bg-[#DF121D] text-white w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                            <i class="fas fa-play text-2xl md:text-3xl ml-1.5 md:ml-2"></i>
-                        </div>
-                    </div>
-
+                <div
+                    class="relative w-full max-w-xl mx-auto aspect-video rounded-xl overflow-hidden shadow-lg border border-gray-100 bg-black">
+                    <iframe src="https://www.youtube.com/embed/EEaOgCgxB8I?rel=0" title="Rahasia Lancar Speaking"
+                        class="absolute top-0 left-0 w-full h-full" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
                 </div>
 
             </div>

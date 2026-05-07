@@ -81,7 +81,7 @@
                             <a href="{{ route('certification-test') }}"
                                 class="block px-5 py-2.5 text-gray-800 hover:bg-gray-50 hover:text-[#0D71F1] text-base font-medium transition-colors">Certification
                                 Test</a>
-                            <a href="#"
+                            <a href="{{ route('learning-package') }}"
                                 class="block px-5 py-2.5 text-gray-800 hover:bg-gray-50 hover:text-[#0D71F1] text-base font-medium transition-colors">Learning
                                 Package</a>
                             <a href="#"
