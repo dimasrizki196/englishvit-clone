@@ -1,41 +1,5 @@
-<!-- ========================================== -->
-<!-- SECTION: TELAH DILIPUT OLEH (MARQUEE KIRI) -->
-<!-- ========================================== -->
-<section class="pt-16 bg-white overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6 text-center mb-8">
-        <h3 class="text-sm md:text-base font-bold text-gray-800 uppercase tracking-wider">Telah diliput oleh:</h3>
-    </div>
+<x-liput />
 
-    <!-- Area Marquee Berjalan ke Kiri -->
-    <div class="marquee-media-wrapper relative flex overflow-hidden w-full group py-4">
-        <!-- Container logo yang akan diduplikasi oleh JS -->
-        <div id="media-content-left" class="marquee-left flex gap-12 md:gap-24 items-center px-6 min-w-max">
-
-            <img src="{{ asset('images/logos/inews.webp') }}" alt="iNews"
-                class="h-7 md:h-9 object-contain transition-all duration-300">
-
-            <img src="{{ asset('images/logos/liputan6.webp') }}" alt="Liputan 6"
-                class="h-8 md:h-10 object-contain transition-all duration-300">
-
-            <img src="{{ asset('images/logos/media-indonesia.webp') }}" alt="Media Indonesia"
-                class="h-8 md:h-10 object-contain transition-all duration-300">
-
-            <img src="{{ asset('images/logos/sindonews.webp') }}" alt="Sindonews"
-                class="h-7 md:h-9 object-contain transition-all duration-300">
-
-            <img src="{{ asset('images/logos/suaracom.webp') }}" alt="Suara.com"
-                class="h-7 md:h-9 object-contain transition-all duration-300">
-
-            <img src="{{ asset('images/logos/warta-jatim.webp') }}" alt="Warta Jatim"
-                class="h-7 md:h-9 object-contain transition-all duration-300">
-
-        </div>
-    </div>
-</section>
-
-<!-- ========================================== -->
-<!-- SECTION: KONSULTASI ADMIN (BANNER BIRU)    -->
-<!-- ========================================== -->
 <section class="py-12 md:py-20 bg-white">
     <div class="max-w-6xl mx-auto px-6">
         <div class="relative overflow-hidden bg-[#0064D2] rounded-3xl p-8 md:p-12 shadow-xl">
@@ -74,9 +38,6 @@
     </div>
 </section>
 
-<!-- ========================================== -->
-<!-- SECTION: BLOG TERBARU                      -->
-<!-- ========================================== -->
 <section class="py-12 md:py-20 bg-white">
     <div class="max-w-7xl mx-auto px-6">
 
@@ -155,38 +116,3 @@
         </div>
     </div>
 </section>
-
-<style>
-    .marquee-left {
-        animation: scroll-left-media 30s linear infinite;
-    }
-
-    .marquee-media-wrapper:hover .marquee-left {
-        animation-play-state: paused;
-    }
-
-    @keyframes scroll-left-media {
-        0% {
-            transform: translateX(0);
-        }
-
-        100% {
-            transform: translateX(-50%);
-        }
-    }
-</style>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Script Kloning Logo Media (Arah Kiri)
-        const mediaContentLeft = document.getElementById('media-content-left');
-        if (mediaContentLeft) {
-            const mediaLogos = Array.from(mediaContentLeft.children);
-            mediaLogos.forEach(logo => {
-                const clone = logo.cloneNode(true);
-                clone.setAttribute('aria-hidden', true);
-                mediaContentLeft.appendChild(clone);
-            });
-        }
-    });
-</script>

@@ -25,14 +25,14 @@ class PageController extends Controller
     private function getTestimonialsData()
     {
         return [
-            ['name' => 'Anisa Cendani H.', 'title' => 'Alumni TOEFL', 'role' => 'Colleger', 'text' => 'Saya belajar penggunaan grammar dengan cara yang lebih mudah dipahami. Saya juga dapat banyak kosakata baru yang membuat saya lebih pede.', 'img' => 'https://i.pravatar.cc/150?img=1'],
-            ['name' => 'Aristya Naziiha', 'title' => 'Alumni IELTS', 'role' => 'Mechanical Engineering Student', 'text' => 'Ini adalah kelas online pertama yang berkesan buat saya. Teachernya helpful banget dan membuat kita PD untuk speaking tanpa takut salah.', 'img' => 'https://i.pravatar.cc/150?img=5'],
-            ['name' => 'Feri Anggara', 'title' => 'Alumni Speaking', 'role' => 'Lecturer', 'text' => 'Ms. Renny ngajarnya asik banget, materi yang diberikan sangat berguna banget untuk ningkatin skor IELTS saya. Thank you Ms!', 'img' => 'https://i.pravatar.cc/150?img=11'],
-            ['name' => 'Budi Santoso', 'title' => 'Alumni Professional', 'role' => 'Software Engineer', 'text' => 'Dari yang awalnya malu ngomong bahasa Inggris, sekarang di kantor udah berani presentasi pakai full English berkat kelas One on One.', 'img' => 'https://i.pravatar.cc/150?img=12'],
-            ['name' => 'Siti Aminah', 'title' => 'Alumni Beginner', 'role' => 'Teacher', 'text' => 'Sistem belajarnya terstruktur banget. Sangat ngebantu buat persiapan beasiswa LPDP saya kemaren.', 'img' => 'https://i.pravatar.cc/150?img=20'],
-            ['name' => 'Rina Wati', 'title' => 'Alumni Entrepreneur', 'role' => 'Entrepreneur', 'text' => 'Materinya padat dan jelas. Nggak nyesel ambil program speaking di sini, teman sekelasnya juga pada aktif.', 'img' => 'https://i.pravatar.cc/150?img=33'],
-            ['name' => 'Dedi Mulyadi', 'title' => 'Alumni Data Analyst', 'role' => 'Data Analyst', 'text' => 'Tutornya asik parah! Kita diajak ngobrol santai tapi tetep dikoreksi kalau ada grammar yang salah. Very recommended.', 'img' => 'https://i.pravatar.cc/150?img=59'],
-            ['name' => 'Laras Ayu', 'title' => 'Alumni Fresh Graduate', 'role' => 'Fresh Graduate', 'text' => 'Bener-bener tempat terbaik buat ningkatin skor TOEFL. Tips and tricks dari tutornya work banget pas ngerjain soal beneran.', 'img' => 'https://i.pravatar.cc/150?img=47'],
+            ['name' => 'Anisa Cendani H.', 'sub' => 'Learn with Yovi', 'title' => 'Alumni TOEFL', 'role' => 'Colleger', 'text' => 'Saya belajar penggunaan grammar dengan cara yang lebih mudah dipahami. Saya juga dapat banyak kosakata baru yang membuat saya lebih pede.', 'img' => 'https://i.pravatar.cc/150?img=1'],
+            ['name' => 'Aristya Naziiha', 'sub' => 'Learn with Elsa', 'title' => 'Alumni IELTS', 'role' => 'Mechanical Engineering Student', 'text' => 'Ini adalah kelas online pertama yang berkesan buat saya. Teachernya helpful banget dan membuat kita PD untuk speaking tanpa takut salah.', 'img' => 'https://i.pravatar.cc/150?img=5'],
+            ['name' => 'Feri Anggara', 'sub' => 'Learn with Renny', 'title' => 'Alumni Speaking', 'role' => 'Lecturer', 'text' => 'Ms. Renny ngajarnya asik banget, materi yang diberikan sangat berguna banget untuk ningkatin skor IELTS saya. Thank you Ms!', 'img' => 'https://i.pravatar.cc/150?img=11'],
+            ['name' => 'Budi Santoso', 'sub' => 'Learn with Yovi', 'title' => 'Alumni Professional', 'role' => 'Software Engineer', 'text' => 'Dari yang awalnya malu ngomong bahasa Inggris, sekarang di kantor udah berani presentasi pakai full English berkat kelas One on One.', 'img' => 'https://i.pravatar.cc/150?img=12'],
+            ['name' => 'Siti Aminah', 'sub' => 'Learn with Yovi', 'title' => 'Alumni Beginner', 'role' => 'Teacher', 'text' => 'Sistem belajarnya terstruktur banget. Sangat ngebantu buat persiapan beasiswa LPDP saya kemaren.', 'img' => 'https://i.pravatar.cc/150?img=20'],
+            ['name' => 'Rina Wati', 'sub' => 'Learn with Elsa', 'title' => 'Alumni Entrepreneur', 'role' => 'Entrepreneur', 'text' => 'Materinya padat dan jelas. Nggak nyesel ambil program speaking di sini, teman sekelasnya juga pada aktif.', 'img' => 'https://i.pravatar.cc/150?img=33'],
+            ['name' => 'Dedi Mulyadi', 'sub' => 'Learn with Renny', 'title' => 'Alumni Data Analyst', 'role' => 'Data Analyst', 'text' => 'Tutornya asik parah! Kita diajak ngobrol santai tapi tetep dikoreksi kalau ada grammar yang salah. Very recommended.', 'img' => 'https://i.pravatar.cc/150?img=59'],
+            ['name' => "Laras Ayu", "sub" => "Learn with Renny", "title" => "Alumni Fresh Graduate", "role" => "Fresh Graduate", "text" => "Bener-bener tempat terbaik buat ningkatin skor TOEFL. Tips and tricks dari tutornya work banget pas ngerjain soal beneran.", "img" => "https://i.pravatar.cc/150?img=47"],
         ];
     }
 
@@ -62,6 +62,59 @@ class PageController extends Controller
             'recommendedPrograms' => $this->getProgramsData(),
             'testimonials' => $this->getTestimonialsData(),
             'clients' => $this->getClientsData(),
+        ]);
+    }
+
+    public function oneOnOne()
+    {
+        // 1. Data Alumni Shorts
+        $alumniTestimonials = [
+            ['video_id' => 'ekDlJq8COIQ'],
+            ['video_id' => 'sG_sdKVhOnE'],
+            ['video_id' => 'av_l-WE1tCM'],
+            ['video_id' => 'YryQVHdZcQ8'],
+            ['video_id' => 'JWRex_zJFl8'],
+            ['video_id' => 'KIvDQBb9wE4'],
+            ['video_id' => 'cJimxbLn-dY'],
+        ];
+
+        // 2. Data Mentor
+        $mentorsData = [
+            [
+                'name' => 'Selma Wulandari',
+                'desc' => 'Joyful learning, solid understanding',
+                'rating' => '4.5 | 30 siswa',
+                'video_id' => 'eWESf5yL-lo',
+                'image' => 'https://img.youtube.com/vi/eWESf5yL-lo/maxresdefault.jpg'
+            ],
+            [
+                'name' => 'Yovi',
+                'desc' => 'Professional & Engaging',
+                'rating' => '4.8 | 45 siswa',
+                'video_id' => 'd_-ByO3zYI4',
+                'image' => 'https://img.youtube.com/vi/d_-ByO3zYI4/maxresdefault.jpg'
+            ],
+            [
+                'name' => 'Mentor Tiga',
+                'desc' => 'Interactive and fun learning',
+                'rating' => '4.7 | 25 siswa',
+                'video_id' => 'tkP1U8-DW0M',
+                'image' => 'https://img.youtube.com/vi/tkP1U8-DW0M/maxresdefault.jpg'
+            ],
+            [
+                'name' => 'Mentor Empat',
+                'desc' => 'Focus on speaking fluency',
+                'rating' => '4.9 | 50 siswa',
+                'video_id' => 'vkJyQTa7Ov8',
+                'image' => 'https://img.youtube.com/vi/vkJyQTa7Ov8/maxresdefault.jpg'
+            ]
+        ];
+
+        return view('one-on-one', [
+            'programs' => $this->getProgramsData(),
+            'alumniShorts' => $alumniTestimonials,
+            'mentors' => $mentorsData,
+            'testimonials' => $this->getTestimonialsData(),
         ]);
     }
 }

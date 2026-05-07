@@ -75,7 +75,7 @@
                             <a href="{{ route('live-class') }}"
                                 class="block px-5 py-2.5 text-gray-800 hover:bg-gray-50 hover:text-[#0D71F1] text-base font-medium transition-colors">Live
                                 Class</a>
-                            <a href="#"
+                            <a href="{{ route('one-on-one') }}"
                                 class="block px-5 py-2.5 text-gray-800 hover:bg-gray-50 hover:text-[#0D71F1] text-base font-medium transition-colors">One
                                 on One</a>
                             <a href="#"
