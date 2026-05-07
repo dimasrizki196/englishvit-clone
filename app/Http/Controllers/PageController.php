@@ -117,4 +117,21 @@ class PageController extends Controller
             'testimonials' => $this->getTestimonialsData(),
         ]);
     }
+
+    public function certificationTest()
+    {
+        return view('certification-test', [
+            'testimonials' => $this->getTestimonialsData(),
+            'clients' => $this->getClientsData(),
+        ]);
+    }
+
+    public function learningPackage()
+    {
+        return view('learning-package', [
+            'programs' => $this->getProgramsData(),
+            'testimonials' => $this->getTestimonialsData(),
+            'clients' => $this->getClientsData(),
+        ]);
+    }
 }
