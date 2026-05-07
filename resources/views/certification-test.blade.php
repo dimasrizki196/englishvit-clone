@@ -14,7 +14,7 @@
     <x-navbar />
 
     <main>
-        <section class="relative pt-24 pb-12 md:pt-28 md:pb-12 overflow-hidden"
+        <section class="relative pt-12 md:pt-20 pb-0 overflow-hidden flex items-end min-h-[500px]"
             style="background: radial-gradient(circle at center top, #1A6AFE 0%, #0A4BD5 100%);">
 
             <div class="absolute top-20 left-10 opacity-60 pointer-events-none transform -rotate-12">

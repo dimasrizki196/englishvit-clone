@@ -134,4 +134,13 @@ class PageController extends Controller
             'clients' => $this->getClientsData(),
         ]);
     }
+
+    public function smartBook()
+    {
+        return view('smart-book', [
+            'programs' => $this->getProgramsData(),
+            'testimonials' => $this->getTestimonialsData(),
+            'clients' => $this->getClientsData(),
+        ]);
+    }
 }
